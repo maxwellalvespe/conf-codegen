@@ -32,6 +32,7 @@ public class Conf {
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and().authorizeHttpRequests()
                 .antMatchers(HttpMethod.POST, "/token").permitAll()
+                .antMatchers(HttpMethod.GET, "/swagger-ui/**").permitAll()
                 .antMatchers(HttpMethod.GET, "/home").permitAll().anyRequest().authenticated().and()
                 .build();
     }
