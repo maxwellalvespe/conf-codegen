@@ -3,4 +3,5 @@ spring:
     user:
       name: maxwell
       password: 123
+
 # doc references:?https://docs.spring.io/spring-boot/docs/2.7.1/reference/htmlsingle/#web.security
